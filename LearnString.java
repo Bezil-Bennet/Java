@@ -1,34 +1,28 @@
-package week2.day1;
+package javaconcept.basics;
 
 public class LearnString {
-public static void main(String[] args) {
-	
-	//Type 1 ------> String Literal
-	String var = "String Literal";
-	String var2 = "Type 1";
-	
-	// Type 2 ----> String Using Object
-			String var1 = new String("Type 2");
-					System.out.println(var1);
-	
-	
-	// Functions 
-	System.out.println(var.toLowerCase());
-	System.out.println(var.toUpperCase());
-	System.out.println(var.toCharArray());
-	System.out.println(var.length());
-	System.out.println(var.concat(var2));
-	System.out.println(var.equals(var2));
-	System.out.println(var.trim());
-	System.out.println(var.replace('i', 'x'));
-	System.out.println(var.substring(3, 5));
-	System.out.println(var.charAt(7));
-	System.out.println("-------------");
-	
-	for (int i = 0; i < var.length(); i++) {
-		System.out.println(var.charAt(i));
+	public static void main(String[] args) {
+		String str = "Welcoeme";
+		//find character giving its index no.
+		System.out.println(str.charAt(2));
+		//find index of character
+		int indexOf = str.indexOf('e');		
+		System.out.println(indexOf);
+		//find length
+		//length property - array
+		//length method = string
+		System.out.println(str.length());
+		//find last index no
+		System.out.println(str.lastIndexOf('e'));
+		// find second occurance if e
+		int indexOf2 = str.indexOf('e', indexOf+1);
+		System.out.println("Second Occuranceof E" +indexOf2);
+		// find third occurance if e
+		int indexOf3 = str.indexOf('e', indexOf2+1);
+		System.out.println("Third Occuarance Of E" +indexOf3);
 		
 		
 	}
-}
+   
+
 }
